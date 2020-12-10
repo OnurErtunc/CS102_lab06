@@ -124,6 +124,9 @@ public class RecursiveMethodTest {
                     count = count + numberOfFiles( i );
                 }
                 count++;
+                if ( !i.isFile() ) {
+                    count--;
+                }
             }
         }
 
